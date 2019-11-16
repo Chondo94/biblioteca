@@ -25,7 +25,7 @@
      <div class="media-content">
        <div class="content">
          <p>
-           <strong>{{ $libro->nombre }}</strong> <small>.</small> <small>{{ $libro->categoria_id}}</small>
+           <strong>{{ $libro->nombre }}</strong> <small>.</small> <small>{{ $libro->categoria->nombre}}</small>
            <br><span class="tag is-info">{{ $libro->editorial_id }}</span> <br>
            Publicado:{{ $libro->publicacion }}<br>
            {{ $libro->descripcion }}        </p>

@@ -54,6 +54,12 @@
           </div>
         </div>
 
+        <select name="categoria_id">
+          @foreach($categoria as $categoria)
+          <option value="{{$categoria['id']}}">{{$categoria['nombre']}}</option>
+          @endforeach
+
+        </select>
         <div class="field">
           <div class="control">
             <input type="text" name="categoria_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Categoria"><br>
