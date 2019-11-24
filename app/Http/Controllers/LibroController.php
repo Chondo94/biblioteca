@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Libro;
 use App\Categoria;
+use App\Editorial;
 use Illuminate\Http\Request;
 
 class LibroController extends Controller
@@ -28,8 +29,11 @@ class LibroController extends Controller
      */
     public function create()
     {
-        $categoria = Categoria::all();
-        return view('libro/create', compact('categoria'));
+      $categoria = Categoria::all();
+      $editorial = Editorial::all();
+      return view('libro/create')
+        ->with('categoria', $categoria)
+        ->with('editorial', $editorial);
     }
 
     /**
@@ -92,6 +96,6 @@ class LibroController extends Controller
     {
       Libro::find($id)->delete();
       $libro = Libro::all();
-      return view('libro', compact('libro'));
+      return view('libro.index', compact('libro'));
     }
 }
