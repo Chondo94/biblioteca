@@ -12,7 +12,7 @@
     <div class="column"></div>
 
     <div class="column">
-      <input type="submit" value="{{ $libro->titulo }}" class="button is-dark is-medium is-fullwidth is-rounded">
+      <input type="submit" value="{{ $libro->categoria->nombre}}" class="button is-dark is-medium is-fullwidth is-rounded">
         <br>
         <table class="table is-striped is-narrow is-hoverable is-fullwidth">
           <!--<tr>
