@@ -60,17 +60,23 @@
           @endforeach
 
         </select>
-        <div class="field">
+        <!-- <div class="field">
           <div class="control">
             <input type="text" name="categoria_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Categoria"><br>
           </div>
-        </div>
+        </div> -->
 
-        <div class="field">
+        <select name="editorial_id">
+          @foreach($editorial as $editorial)
+          <option value="{{$editorial['id']}}">{{$editorial['nombre']}}</option>
+          @endforeach
+        </select>
+
+        <!-- <div class="field">
           <div class="control">
             <input type="text" name="editorial_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Editorial"><br>
           </div>
-        </div>
+        </div> -->
 
         <input type="submit" value="guardar" class="button is-primary is-medium is-fullwidth is-rounded"  required>
     </form>
