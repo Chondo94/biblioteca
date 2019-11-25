@@ -29,7 +29,7 @@
           @method('DELETE')
           <div class="has-text-centered">
             <a href="{{ route('categoria.index') }}" class="button is-link is-normal is-info is-rounded has-text-centere">Volver</a>
-          <a href="{{ route('categoria.edit', $categoria->id) }}" class="button is-success is-normal is-info is-rounded has-text-centered">Editar</a>
+          <a href="{{ route('categoria.edit', $categoria->id) }}" class="button is-warning is-normal is-info is-rounded has-text-centered">Editar</a>
           <button class="button is-danger is-normal is-info is-rounded has-text-centered" type="submit" name="Eliminar">Eliminar</button>
         </div>
         </form>

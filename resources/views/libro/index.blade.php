@@ -40,7 +40,7 @@
      </div>
 
         <div class="has-text-centered">
-          <a href="{{ route('libro.create') }}"><h1 class="button is-active is-medium is-rounded has-text-centered">Registrar</h1></a>
+          <a href="{{ route('libro.create') }}"><h1 class="button is-dark is-active is-outlined is-medium is-rounded has-text-centered">Registrar</h1></a>
         </div>
       </div>
     </div>

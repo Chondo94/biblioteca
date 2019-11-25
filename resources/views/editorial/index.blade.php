@@ -28,14 +28,14 @@
       <td>{{ $editorial->telefono }}</td>
       <td>{{ $editorial->direccion }}</td>
       <td>{{ $editorial->email }}</td>
-      <td><a href="{{ route('editorial.show', $editorial->id) }}" class="button is-dark">Detalle</a></td>
+      <td><a href="{{ route('editorial.show', $editorial->id) }}" class="button is-dark">Ver</a></td>
     </tr>
 
     @endforeach
     </table>
 
     <div class="has-text-centered">
-      <a href="{{ route('editorial.create') }}"><h1 class="button is-active is-medium is-rounded has-text-centered">Registrar</h1></a>
+      <a href="{{ route('editorial.create') }}"><h1 class="button is-dark is-active is-outlined is-medium is-rounded has-text-centered">Registrar</h1></a>
     </div>
   </div>
 

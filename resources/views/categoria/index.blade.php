@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}"> <!--este comando me sirve para llamar a Bulma-->
-    <title></title>
-    <style media="screen">
-      body{
-        /* background-image: url("img/fondo.jpg"); */
 
-      }
-      #centro{
-        background-image: url("img/fondoc.jpg");
-      }
-    </style>
-  </head>
-  <body style="background: url('img/fondo.jpg');"><br>
-    <section class="section">
-      <div class="columns is-centered">
-        <div class="column is-narrow">
-        <input type="submit" value="Categoria de Libros" class="button is-black is-medium is-fullwidth is-rounded">
-        <br>
-        <div class="box" id="centro">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  <!--este comando me sirve para llamar a Bulma-->
+  <title></title>
+  <style media="screen">
+    body {
+      /* background-image: url("img/fondo.jpg"); */
 
-   @foreach($categoria as $categoria)
+    }
 
+    #centro {
+      background-image: url("img/fondoc.jpg");
+    }
+  </style>
+</head>
 
-   <article class="media">
-     <!-- <div class="media-left">
-       <figure class="image is-64x64">
-       </figure>
-     </div> -->
-     <div class="media-content">
-       <div class="content">
-         <p>
-           <strong>{{ $categoria->nombre }}</strong> <small>.</small><br>
-           {{ $categoria->descripcion }}        </p>
-             <form action="{{ route('categoria.destroy', $categoria->id)}}" method="post">
-               @csrf
-               @method('DELETE')
-               <div class="has-text-centered">
-                 <a  href="{{ route('categoria.show', $categoria->id) }}" class = 'button is-dark is-outline is-rounded'><span>Ver</span></a>
-               </div>
-             </form>
-         </div>
-       </article>
+<body><br><br><br>
+  <div class="columns">
 
-       @endforeach
-     </div>
+    <div class="column"></div>
 
-        <div class="has-text-centered">
-          <a href="{{ route('categoria.create') }}"><h1 class="button is-active is-medium is-rounded has-text-centered">Registrar</h1></a>
-        </div>
+    <div class="column">
+      <input type="submit" value="Categorias" class="button is-black is-medium is-fullwidth is-rounded">
+      <br>
+      <table class="table  is-striped is-narrow is-hoverable is-fullwidth">
+        <tr>
+          <th>Nombre</th>
+          <th>Descripcion</th>
+        </tr>
+
+        @foreach($categoria as $categoria)
+        <!--la primero "student" es la variable que se creo en el controlador index. -->
+
+        <tr>
+          <td>{{ $categoria->nombre }}</td>
+          <td>{{ $categoria->descripcion }}</td>
+          <td><a href="{{ route('categoria.show', $categoria->id) }}" class="button is-dark">Ver</a></td>
+        </tr>
+
+        @endforeach
+      </table>
+
+      <div class="has-text-centered">
+        <a href="{{ route('categoria.create') }}">
+          <h1 class="button is-dark is-active is-outlined is-medium is-rounded has-text-centered">Registrar</h1>
+        </a>
       </div>
     </div>
-      </section>
 
-  </body>
+    <div class="column"></div>
+
+  </div>
+</body>
+
 </html>

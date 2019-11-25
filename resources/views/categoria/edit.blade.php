@@ -30,7 +30,7 @@
         </div>
 
         <div class="has-text-centered">
-        <button class="button is-dark is-outlined is-active is-medium is-rounded has-text-centered"  type="submit" name="guardar">Guardar</button>
+        <button class="button is-primary is-outlined is-active is-medium is-rounded has-text-centered"  type="submit" name="guardar">Guardar</button>
         <a href="{{ route('categoria.index') }}" class="button is-link is-outlined is-active is-medium is-rounded has-text-centered">Volver</a>
       </div>
     </form>

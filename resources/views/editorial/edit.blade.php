@@ -10,7 +10,7 @@
     <div class="columns">
     <div class="column"></div>
     <div class="column">
-      <h1 class="subtitle is-2 has-text-centered">Editar Editorial</h1>
+      <h1 class="subtitle is-2 has-text-centered">Actualizar Editorial</h1>
     <form method="post" action="{{ route('editorial.update', $editorial->id) }}">
 
         @csrf
@@ -42,7 +42,8 @@
         </div>
 
         <div class="has-text-centered">
-          <input type="submit" value="guardar" class="button is-active is-medium is-rounded has-text-centered" required>
+        <input type="submit" value="guardar" class="button is-success is-outlined is-active is-medium is-rounded has-text-centered" required>
+        <a href="{{ route('editorial.index') }}" class="button is-link is-outlined is-active is-medium is-rounded has-text-centered">Volver</a>
         </div>
     </form>
     </div>

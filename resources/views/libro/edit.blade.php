@@ -28,11 +28,11 @@
           </div>
         </div>
 
-        <div class="field">
+        <!-- <div class="field">
           <div class="control">
             <input type="file" name="img" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="" value="{{ $libro->img }}"><br>
           </div>
-        </div>
+        </div> -->
 
         <div class="field">
           <div class="control">
@@ -59,18 +59,19 @@
 
         <div class="field">
           <div class="control">
-            <input type="text" name="categoria_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Categoria" value="{{ $libro->categoria_id }}"><br>
+            <input type="text" name="categoria_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Categoria" value="{{ $libro->categoria->nombre }}"><br>
           </div>
         </div>
 
         <div class="field">
           <div class="control">
-            <input type="text" name="editorial_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Editorial" value="{{ $libro->editorial_id }}"><br>
+            <input type="text" name="editorial_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Editorial" value="{{ $libro->editorial->nombre }}"><br>
           </div>
         </div>
 
         <div class="has-text-centered">
         <input type="submit" value="guardar" class="button is-success is-outlined is-active is-medium is-rounded has-text-centered" required>
+        <a href="{{ route('libro.index') }}" class="button is-link is-outlined is-active is-medium is-rounded has-text-centered">Volver</a>
       </div>
     </form>
     </div>

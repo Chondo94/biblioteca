@@ -38,7 +38,16 @@
           </div>
         </div>
 
-        <input type="submit" value="guardar" class="button is-active is-medium is-rounded has-text-centered"  required>
+        <div class="field">
+          <div class="control">
+            <input type="submit" value="guardar" class="button is-primary is-medium is-fullwidth is-rounded"  required>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <a href="{{ route('editorial.index') }}" class="button is-link is-medium is-fullwidth is-rounded">Volver</a>
+          </div>
+        </div>
     </form>
   </div>
 
