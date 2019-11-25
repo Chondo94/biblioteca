@@ -34,6 +34,7 @@
             <th>Copias totales</th><td>{{ $libro->total_copies }}</td>
           </tr>
           <tr>
+            <!-- aca muestro la fecha, y le doy el formato que quiero que se muestre. -->
             <th>Fecha de Registro</th><td>{{ $libro->created_at->format('d-M-Y')}}</td>
           </tr>
           <tr>
