@@ -21,6 +21,9 @@
           <tr>
             <th>Nombre</th><td>{{ $libro->titulo }}</td>
           </tr>
+          <!-- <tr>
+            <th>Fecha que se registro</th><td>{{ $libro->fecha_registro}}</td>
+          </tr> -->
           <tr>
             <th>Descripcion</th><td>{{ $libro->descripcion }}</td>
           </tr>
@@ -31,16 +34,16 @@
             <th>Copias totales</th><td>{{ $libro->total_copies }}</td>
           </tr>
           <tr>
+            <th>Fecha de Registro</th><td>{{ $libro->created_at->format('d-M-Y')}}</td>
+          </tr>
+          <tr>
             <th>Fecha de publicacion</th><td>{{ $libro->publicacion}}</td>
           </tr>
           <tr>
-            <th>Fecha que se registro</th><td>{{ $libro->fecha_registro}}</td>
+            <th>Categoria</th><td>{{ $libro->categoria->nombre}}</td>
           </tr>
           <tr>
-            <th>Categoria</th><td>{{ $libro->categoria_id}}</td>
-          </tr>
-          <tr>
-            <th>Editorial</th><td>{{ $libro->editorial_id}}</td>
+            <th>Editorial</th><td>{{ $libro->editorial->nombre}}</td>
           </tr>
         </table>
         <br>
