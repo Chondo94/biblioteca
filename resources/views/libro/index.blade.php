@@ -25,12 +25,14 @@
      <div class="media-content">
        <div class="content">
          <p>
-          <strong> <span class="tag is-info">{{ $libro->titulo}}</span></strong> <small> <br/>
+          <strong> <span class="tag is-info">{{ $libro->titulo}}</span></strong> <br/>
+          <strong> <span class="tag is-info">{{ $libro->nombre_autor}}</span></strong> 
+          <small> <br/>
            <strong>Categoria: </strong> {{ $libro->categoria->nombre}}</small>
            <br><strong>Editorial: </strong>{{ $libro->editorial->nombre }}<br>
            <strong>Codigo: </strong>{{ $libro->isbn }}<br>
            <strong>Descripcion: </strong>{{ $libro->descripcion }}        </p>
-           <a  href="{{ route('libro.show', $libro->id) }}" class = 'button  is-success  is-outline'><span>Editar</span></a>   </div>
+           <a  href="{{ route('libro.show', $libro->id) }}" class = 'button  is-success  is-outline'><span>Ver</span></a>   </div>
 
          </div>
        </article>
