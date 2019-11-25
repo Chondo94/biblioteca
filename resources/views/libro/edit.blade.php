@@ -59,13 +59,13 @@
 
         <div class="field">
           <div class="control">
-            <input type="text" name="categoria_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Categoria" value="{{ $libro->categoria->nombre }}"><br>
+            <input type="text" name="categoria_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Categoria" value="{{ $libro->categoria_id }}"><br>
           </div>
         </div>
 
         <div class="field">
           <div class="control">
-            <input type="text" name="editorial_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Editorial" value="{{ $libro->editorial->nombre }}"><br>
+            <input type="text" name="editorial_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Editorial" value="{{ $libro->editorial_id }}"><br>
           </div>
         </div>
 

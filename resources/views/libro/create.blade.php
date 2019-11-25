@@ -28,12 +28,6 @@
           </div>
         </div>
 
-        <!-- <div class="field">
-          <div class="control">
-            <input type="file" name="img" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Seleccione una imagen"><br>
-          </div>
-        </div> -->
-
         <div class="field">
           <div class="control">
             <input type="text" name="descripcion" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Descripcion"><br>
@@ -52,35 +46,35 @@
         </div>
 
         <div class="field">
-          <label class="label">Fecha Publicacion</label>
+          <!-- <label class="label">Fecha Publicacion</label> -->
           <div class="control">
-            <input type="date" name="publicacion" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Fecha de publicacion"><br>
+            <input type="text" name="publicacion" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Fecha publicacion Y-M-D"><br>
           </div>
         </div>
 
         <div class="field">
-          <label class="label">Categoria</label>
+          <!-- <label class="label">Categoria</label> -->
           <div class="select is-primary is-rounded is-medium">
             <select name="categoria_id">
               @foreach($categoria as $categoria)
-              <option value="{{$categoria['id']}}">{{$categoria['nombre']}}</option>
+              <option value="{{$categoria['id']}}">Cod.{{$categoria['id']}} {{$categoria['nombre']}}</option>
               @endforeach
             </select>
           </div>
-        </div>
+          <!-- </div> -->
 
-        <!-- <div class="field">
+          <!-- <div class="field">
           <div class="control">
             <input type="text" name="categoria_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Categoria"><br>
           </div>
         </div> -->
 
-        <div class="field">
-          <label class="label">Fecha Publicacion</label>
+          <!-- <div class="field"> -->
+          <!-- <label class="label">Fecha Publicacion</label> -->
           <div class="select is-primary is-rounded is-medium">
             <select name="editorial_id">
               @foreach($editorial as $editorial)
-              <option value="{{$editorial['id']}}">{{$editorial['nombre']}}</option>
+              <option value="{{$editorial['id']}}">Cod.{{$editorial['id']}} {{$editorial['nombre']}}</option>
               @endforeach
             </select>
           </div>
@@ -93,19 +87,9 @@
         </div> -->
 
         <div class="field">
-          <div class="file is-warning is-rounded">
-            <label class="file-label">
-              <input class="file-input" type="file" name="resume">
-              <span class="file-cta">
-                <span class="file-icon">
-                  <i class="fas fa-upload"></i>
-                </span>
-                <span class="file-label">
-                  Seleccionar Imagen
-                </span>
-              </span>
-            </label>
-          </div>
+        <div class="control">
+            <input type="file" name="img" class="file is-primary is-large has-text-centered is-rounded" required placeholder="Seleccione una imagen"><br>
+        </div>
         </div>
 
         <!-- <input type="submit" value="guardar" class="button is-primary is-medium is-fullwidth is-rounded"  required> -->

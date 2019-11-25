@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}"> <!--este comando me sirve para llamar a Bulma-->
-    <title></title>
+    <title>Biblioteca Virtual</title>
   </head>
-  <body><br><br><br>
+  <body>
     <section class="section">
       <div class="columns is-centered">
         <div class="column is-narrow">
