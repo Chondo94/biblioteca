@@ -49,19 +49,23 @@
             <input type="text" name="total_copies" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Copias totales del libro"><br>
           </div>
         </div>
-
+        
         <div class="field">
+          <label class="label">Fecha Publicacion</label>
           <div class="control">
             <input type="date" name="publicacion" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Fecha de publicacion"><br>
           </div>
         </div>
+
         <div class="field">
-          <div class="select is-primary is-rounded">
+            <label class="label">Categoria</label>
+          <div class="select is-primary is-rounded is-medium">
             <select name="categoria_id">
               @foreach($categoria as $categoria)
               <option value="{{$categoria['id']}}">{{$categoria['nombre']}}</option>
               @endforeach
             </select>
+          </div>
           </div>
 
         <!-- <div class="field">
@@ -69,11 +73,13 @@
             <input type="text" name="categoria_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Categoria"><br>
           </div>
         </div> -->
-
-          <div class="select is-primary is-rounded">
+          
+        <div class="field">
+        <label class="label">Fecha Publicacion</label>
+          <div class="select is-primary is-rounded is-medium">
             <select name="editorial_id">
               @foreach($editorial as $editorial)
-              <option value="{{$editorial['id']}}">{{$editorial['nombre']}}</option>
+              <option  value="{{$editorial['id']}}" >{{$editorial['nombre']}}</option>
               @endforeach
             </select>
           </div>
@@ -93,7 +99,7 @@
         </div>
         <div class="field">
           <div class="control">
-            <a href="{{ route('categoria.index') }}" class="button is-link is-medium is-fullwidth is-rounded">Volver</a>
+            <a href="{{ route('libro.index') }}" class="button is-link is-medium is-fullwidth is-rounded">Volver</a>
           </div>
         </div>
       </form>
