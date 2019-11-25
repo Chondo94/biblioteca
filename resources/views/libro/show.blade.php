@@ -6,7 +6,7 @@
     <title></title>
   </head>
   <body>
-    <br><br><br><br><br>
+    <br/><br/><br/><br/>
     <div class="columns">
 
     <div class="column"></div>
@@ -24,27 +24,28 @@
           <!-- <tr>
             <th>Fecha que se registro</th><td>{{ $libro->fecha_registro}}</td>
           </tr> -->
+          
           <tr>
-            <th>Descripcion</th><td>{{ $libro->descripcion }}</td>
+            <th>Autor</th><td>{{ $libro->nombre_autor }}</td>
           </tr>
           <tr>
-            <th>Nombre de Autor</th><td>{{ $libro->nombre_autor }}</td>
-          </tr>
-          <tr>
-            <th>Copias totales</th><td>{{ $libro->total_copies }}</td>
+            <th>Copias</th><td>{{ $libro->total_copies }}</td>
           </tr>
           <tr>
             <!-- aca muestro la fecha, y le doy el formato que quiero que se muestre. -->
-            <th>Fecha de Registro</th><td>{{ $libro->created_at->format('d-M-Y')}}</td>
+            <th>Registro</th><td>{{ $libro->created_at->format('d-M-Y')}}</td>
           </tr>
           <tr>
-            <th>Fecha de publicacion</th><td>{{ $libro->publicacion}}</td>
+            <th>publicacion</th><td>{{ $libro->publicacion}}</td>
           </tr>
           <tr>
             <th>Categoria</th><td>{{ $libro->categoria->nombre}}</td>
           </tr>
           <tr>
             <th>Editorial</th><td>{{ $libro->editorial->nombre}}</td>
+          </tr>
+          <tr>
+            <th>Descripcion</th><td>{{ $libro->descripcion }}</td>
           </tr>
         </table>
         <br>
@@ -53,7 +54,7 @@
           @method('DELETE')
           <div class="has-text-centered">
             <a href="{{ route('libro.index') }}" class="button is-link is-normal is-info is-rounded has-text-centere">Volver</a>
-          <a href="{{ route('libro.edit', $libro->id) }}" class="button is-success is-normal is-info is-rounded has-text-centered">Editar</a>
+          <a href="{{ route('libro.edit', $libro->id) }}" class="button is-warning is-normal is-info is-rounded has-text-centered">Editar</a>
           <input type="submit" value="Eliminar" class="button is-danger is-normal is-info is-rounded has-text-centered">
         </div>
         </form>

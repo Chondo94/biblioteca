@@ -30,6 +30,12 @@
 
         <div class="field">
           <div class="control">
+            <input type="file" name="img" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="" value="{{ $libro->img }}"><br>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
             <input type="text" name="descripcion" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Descripcion" value="{{ $libro->descripcion }}"><br>
           </div>
         </div>
@@ -50,12 +56,6 @@
             <input type="date" name="publicacion" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Fecha de publicacion" value="{{ $libro->publicacion }}"><br>
           </div>
         </div>
-
-        <!-- <div class="field">
-          <div class="control">
-            <input type="date" name="fecha_registro" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Fecha de Registro" value="{{ $libro->fecha_registro }}"><br>
-          </div>
-        </div> -->
 
         <div class="field">
           <div class="control">

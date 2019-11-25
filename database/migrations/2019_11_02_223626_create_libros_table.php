@@ -17,11 +17,11 @@ class CreateLibrosTable extends Migration
             $table->bigIncrements('id');
             $table->string('isbn', 100);
             $table->string('titulo', 100);
+            $table->string('img', 500);
             $table->string('descripcion', 255);
             $table->string('nombre_autor', 50);
             $table->string('total_copies');
             $table->date('publicacion');
-            $table->date('fecha_registro');
             $table->bigInteger('categoria_id')->unsigned();
             $table->bigInteger('editorial_id')->unsigned();
             $table->timestamps();

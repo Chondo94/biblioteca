@@ -90,6 +90,6 @@ class CategoriaController extends Controller
     {
       Categoria::find($id)->delete();
       $categoria = Categoria::all();
-      return view('categoria', compact('categoria'));
+      return view('categoria.index', compact('categoria'));
     }
 }
