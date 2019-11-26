@@ -1,7 +1,7 @@
 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="#">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      <img src="https://img2.freepng.es/20171207/f2e/library-logo-5a2954d7d97100.6829629715126581358907.jpg" width="112" height="44">
     </a>
 
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -13,15 +13,15 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a href="libro" class="navbar-item">
+      <a href="/libro" class="navbar-item">
         Libros
       </a>
 
-      <a href="editorial" class="navbar-item">
+      <a href="/editorial" class="navbar-item">
         Editoriales
       </a>
 
-      <a href="categoria" class="navbar-item">
+      <a href="/categoria" class="navbar-item">
         Categorias
       </a>
 
