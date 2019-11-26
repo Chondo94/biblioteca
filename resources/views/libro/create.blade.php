@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
   <title></title>
 </head>
 
@@ -12,7 +13,7 @@
     <div class="column"></div>
 
     <div class="column">
-      <h1 class="subtitle is-2 has-text-centered">Registrar Libro</h1>
+      <h1 id="editar" class="subtitle is-2 has-text-centered">Registrar Libro</h1>
       <form method="post" action="{{ route('libro.store') }}">
 
         {{ csrf_field() }}

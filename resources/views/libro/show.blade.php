@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
     <title></title>
   </head>
   <body>
-    <br/><br/><br/><br/>
+    @include ('encabezado')
+    <br>
     <div class="columns">
 
     <div class="column"></div>

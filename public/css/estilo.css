@@ -1,0 +1,30 @@
+    #pie {
+        /* aca limpia los espacios que existen con los otros div o cajas */
+        clear: both;
+        /* este es el alto que se le esta dando */
+        width: 100%;
+        /* aca le decimos que tenga un margen de 0 y que se centre */
+        margin: 0px auto;
+        /* aca le colocamos un fondo */
+        background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100%);
+        /* aca le estamos dando un border */
+        border: 1px solid #c9c9c9;
+        /* aca le decimos que el borde solo se muestre en la parte superior. */
+        border-bottom: none;
+        /* aca le aplicamos un border a la parte superior derecha e izquierda */
+        /* 1)parte superior izquierda, 2) parte superior derecha, 3)parte inferior izquierda, 4) parte inferior derecha */
+        border-radius: 8px 8px 0px 0px;
+        color: #666;
+        height: auto-increment;
+        padding: 15px;
+        /* aca le dechimos que nos alinea el texto al centro. */
+        text-align: center;
+    }
+    
+    body {
+        background-color: #666;
+    }
+    
+    #editar {
+        color: #f9f9f9;
+    }

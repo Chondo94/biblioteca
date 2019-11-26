@@ -90,6 +90,6 @@ class EditorialController extends Controller
     {
       Editorial::find($id)->delete();
       $editorial = Editorial::all();
-      return view('editorial', compact('editorial'));
+      return view('editorial.index', compact('editorial'));
     }
 }

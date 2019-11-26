@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}"> <!--este comando me sirve para llamar a Bulma-->
+    <link rel="stylesheet" href="{{ asset('css/estilo.css') }}"> <!--este comando me sirve para llamar a Bulma-->
     <title>Biblioteca Virtual</title>
   </head>
   <body>
+    @include('encabezado')
     <section class="section">
       <div class="columns is-centered">
         <div class="column is-narrow">
@@ -40,11 +42,13 @@
      </div>
 
         <div class="has-text-centered">
-          <a href="{{ route('libro.create') }}"><h1 class="button is-dark is-active is-outlined is-medium is-rounded has-text-centered">Registrar</h1></a>
+          <a href="{{ route('libro.create') }}"><h1 class="button is-dark is-active is-medium is-rounded has-text-centered">Registrar</h1></a>
         </div>
       </div>
     </div>
       </section>
+      
+      @include('footer')
 
   </body>
 </html>

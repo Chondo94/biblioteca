@@ -3,9 +3,14 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}"> <!--este comando me sirve para llamar a Bulma-->
-    <title></title>
+    <link rel="stylesheet" href="{{ asset('css/estilo.css') }}"> <!--este comando me sirve para llamar a Bulma-->
+    <title>Biblioteca/Editorial</title>
   </head>
-  <body><br><br><br>
+  <body>
+
+  @include ('encabezado')
+  <br>
+  
 <div class="columns">
 
   <div class="column"></div>
@@ -35,12 +40,15 @@
     </table>
 
     <div class="has-text-centered">
-      <a href="{{ route('editorial.create') }}"><h1 class="button is-dark is-active is-outlined is-medium is-rounded has-text-centered">Registrar</h1></a>
+      <a href="{{ route('editorial.create') }}"><h1 class="button is-dark is-active is-medium is-rounded has-text-centered">Registrar</h1></a>
     </div>
   </div>
 
     <div class="column"></div>
 
   </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  @include ('footer')
+
   </body>
 </html>
