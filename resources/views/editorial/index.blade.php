@@ -7,7 +7,6 @@
     <title>Biblioteca/Editorial</title>
   </head>
   <body>
-
   @include ('encabezado')
   <br>
   
@@ -47,7 +46,8 @@
     <div class="column"></div>
 
   </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+  
   @include ('footer')
 
   </body>

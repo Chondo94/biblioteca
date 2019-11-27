@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 
 Route::resource('libro', 'LibroController');
 Route::resource('editorial', 'EditorialController');
@@ -23,6 +19,5 @@ Route::resource('periodo', 'SubjectYearController');
 
 Route::get('/add/{book_id}', 'OrderController@add');
 
-// Route::get('/insert', function () {
-//     return view('insert');
-// });
+Auth::routes();
+Route::get('/','LibroController@index');

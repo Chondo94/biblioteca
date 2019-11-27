@@ -10,6 +10,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
+    
     /*
     |--------------------------------------------------------------------------
     | Register Controller
@@ -28,17 +29,30 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/libro';
 
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
+
+    /* 
+     Esto sirve para que me lleve al al formulario de regitros, lo he comentado
+     para que no me muestre el formulario. sin antes haberme logueado.
+    */
+    // public function __construct()
+    // {
+    //     $this->middleware('guest');
+    // }
+    
+    /* 
+     Esto me sirve para que no muestre el formulario, sin antes haberse logaeado
+     de lo contrario no mostrara el formulario.
+    */
+    public function __construct(){
+        $this->middleware('auth');
+      }
 
     /**
      * Get a validator for an incoming registration request.

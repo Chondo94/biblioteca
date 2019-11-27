@@ -30,7 +30,7 @@
           <strong> <span class="tag is-info">Nombre: {{ $libro->titulo}}</span></strong> <br/>
           <strong> <span class="tag is-info">Autor: {{ $libro->nombre_autor}}</span></strong> <br/>
           <strong> <span class="tag is-info">Categoria: {{ $libro->categoria->nombre}}</span></strong> <br/>
-          <strong> <span class="tag is-info">Editorial: {{ $libro->editorial->nombre }}</span></strong> <br/>
+          <!-- <strong> <span class="tag is-info">Editorial: {{ $libro->editorial->nombre }}</span></strong> <br/> -->
            <!-- <strong>Descripcion: </strong>{{ $libro->descripcion }}         -->
            </p>
            <a  href="{{ route('libro.show', $libro->id) }}" class = 'button  is-success  is-outline'><span>Ver</span></a> </div>
@@ -47,8 +47,6 @@
       </div>
     </div>
       </section>
-      
       @include('footer')
-
   </body>
 </html>

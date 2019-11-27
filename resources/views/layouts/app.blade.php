@@ -18,7 +18,7 @@
             <nav class="navbar has-shadow">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a href="{{ url('/') }}" class="navbar-item">{{ config('app.name', 'Laravel') }}</a>
+                        <a href="{{ url('/libro') }}" class="navbar-item">{{ config('app.name', 'Laravel') }}</a>
 
                         <div class="navbar-burger burger" data-target="navMenu">
                             <span></span>
@@ -33,10 +33,10 @@
                         <div class="navbar-end">
                             @if (Auth::guest())
                                 <a class="navbar-item " href="{{ route('login') }}">Login</a>
-                                <a class="navbar-item " href="{{ route('register') }}">Register</a>
-                            @else
+                                @else
                                 <div class="navbar-item has-dropdown is-hoverable">
-                                    <a class="navbar-link" href="#">{{ Auth::user()->name }}</a>
+                                    <a class="navbar-item" href="#">{{ Auth::user()->name }}</a>
+                                    <a class="navbar-item " href="{{ route('register') }}">Register</a>
 
                                     <div class="navbar-dropdown">
                                         <a class="navbar-item" href="{{ route('logout') }}"
