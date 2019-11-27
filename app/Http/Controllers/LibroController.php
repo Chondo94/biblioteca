@@ -92,9 +92,13 @@ class LibroController extends Controller
     {
       $libro = Libro::find($id);
       $libro -> update($request->all());
-      $editorial = Editorial::find($id);
-      $editorial -> update($request->all());
       return view('libro.show', compact('libro'));
+
+      // $libro = Libro::find($id);
+      // $libro -> update($request->all());
+      // $editorial = Editorial::find($id);
+      // $editorial -> update($request->all());
+      // return view('libro.show', compact('libro'));
     }
 
     /**
