@@ -19,30 +19,30 @@
         {{ csrf_field() }}
         <div class="field">
           <div class="control">
-            <input type="text" name="isbn" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Ingrese ISBN"><br>
+            <input type="text" name="isbn" class="input is-primary is-large has-text-centered is-rounded" required pattern="[A-Z a-z 0-9]+" maxlength="50" placeholder="Ingrese ISBN"><br>
           </div>
         </div>
 
         <div class="field">
           <div class="control">
-            <input type="text" name="titulo" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Nombre Libro"><br>
+            <input type="text" name="titulo" class="input is-primary is-large has-text-centered is-rounded" required pattern="[A-Z a-z]+" minlength="3" maxlength="50" placeholder="Nombre Libro"><br>
           </div>
         </div>
 
         <div class="field">
           <div class="control">
-            <input type="text" name="descripcion" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Descripcion"><br>
+            <input type="text" name="descripcion" class="input is-primary is-large has-text-centered is-rounded" required pattern="[A-Z a-z]+" maxlength="250" placeholder="Descripcion"><br>
           </div>
         </div>
         <div class="field">
           <div class="control">
-            <input type="text" name="nombre_autor" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Nombre Autor"><br>
+            <input type="text" name="nombre_autor" class="input is-primary is-large has-text-centered is-rounded" required pattern="[A-Z a-z]+" minlength="3" maxlength="50" placeholder="Nombre Autor"><br>
           </div>
         </div>
 
         <div class="field">
           <div class="control">
-            <input type="text" name="total_copies" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Copias totales del libro"><br>
+            <input type="text" name="total_copies" class="input is-primary is-large has-text-centered is-rounded" required pattern="[0-9]+" placeholder="Copias totales del libro"><br>
           </div>
         </div>
 

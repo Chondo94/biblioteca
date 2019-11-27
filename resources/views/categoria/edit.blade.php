@@ -20,13 +20,13 @@
 
         <div class="field">
           <div class="control">
-            <input type="text" name="nombre" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Nombre de Categoria" value="{{ $categoria->nombre }}"><br>
+            <input type="text" name="nombre" class="input is-primary is-large has-text-centered is-rounded" required pattern="[A-Z a-z]+" maxlength="50" placeholder="Nombre de Categoria" value="{{ $categoria->nombre }}"><br>
           </div>
         </div>
 
         <div class="field">
           <div class="control">
-            <input type="text" name="descripcion" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Descripcion" value="{{ $categoria->descripcion }}"><br>
+            <input type="text" name="descripcion" class="input is-primary is-large has-text-centered is-rounded" required pattern="[A-Z a-z]+" maxlength="250" placeholder="Descripcion" value="{{ $categoria->descripcion }}"><br>
           </div>
         </div>
 

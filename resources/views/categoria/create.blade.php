@@ -17,12 +17,12 @@
         {{ csrf_field() }}
         <div class="field">
           <div class="control">
-            <input type="text" name="nombre"  class="input is-primary is-large has-text-centered is-rounded" required placeholder="Nombre"><br>
+            <input type="text" name="nombre"  class="input is-primary is-large has-text-centered is-rounded" required pattern="[A-Z a-z]+" maxlength="50" placeholder="Nombre"><br>
           </div>
         </div>
         <div class="field">
           <div class="control">
-            <input type="text" name="descripcion"  class="input is-primary is-large has-text-centered is-rounded" required placeholder="Descripcion"><br>
+            <input type="text" name="descripcion"  class="input is-primary is-large has-text-centered is-rounded" required pattern="[A-Z a-z]+" maxlength="250" placeholder="Descripcion"><br>
           </div>
         </div>
         <div class="field">

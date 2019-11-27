@@ -20,12 +20,12 @@
 
         <div class="field">
           <div class="control">
-            <input type="text" name="isbn"  class="input is-primary is-large has-text-centered is-rounded" required placeholder="Ingrese ISBN" value="{{ $libro->isbn }}"><br>
+            <input type="text" name="isbn"  class="input is-primary is-large has-text-centered is-rounded" required pattern="[A-Z a-z 0-9]+" maxlength="50" placeholder="Ingrese ISBN" value="{{ $libro->isbn }}"><br>
           </div>
         </div>
         <div class="field">
           <div class="control">
-            <input type="text" name="titulo"  class="input is-primary is-large has-text-centered is-rounded" required placeholder="Nombre Libro" value="{{ $libro->titulo }}"><br>
+            <input type="text" name="titulo"  class="input is-primary is-large has-text-centered is-rounded" required pattern="[A-Z a-z]+" minlength="3" maxlength="50" placeholder="Nombre Libro" value="{{ $libro->titulo }}"><br>
           </div>
         </div>
 
@@ -37,18 +37,18 @@
 
         <div class="field">
           <div class="control">
-            <input type="text" name="descripcion" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Descripcion" value="{{ $libro->descripcion }}"><br>
+            <input type="text" name="descripcion" class="input is-primary is-large has-text-centered is-rounded"  required pattern="[A-Z a-z]+" maxlength="250" placeholder="Descripcion" value="{{ $libro->descripcion }}"><br>
           </div>
         </div>
         <div class="field">
           <div class="control">
-            <input type="text" name="nombre_autor" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Nombre Autor" value="{{ $libro->nombre_autor }}"><br>
+            <input type="text" name="nombre_autor" class="input is-primary is-large has-text-centered is-rounded"  required pattern="[A-Z a-z]+" maxlength="50" placeholder="Nombre Autor" value="{{ $libro->nombre_autor }}"><br>
           </div>
         </div>
 
         <div class="field">
           <div class="control">
-            <input type="text" name="total_copies" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Numero de paginas" value="{{ $libro->total_copies }}"><br>
+            <input type="text" name="total_copies" class="input is-primary is-large has-text-centered is-rounded"  required pattern="[0-9]+" placeholder="Numero de paginas" value="{{ $libro->total_copies }}"><br>
           </div>
         </div>
 
@@ -67,19 +67,6 @@
         <div class="field">
           <div class="control">
             <input type="text" name="editorial_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Editorial" value="{{ $libro->editorial_id }}"><br>
-          </div>
-        </div>
-
-        <div class="field">
-          <div class="control">
-            <div class="select is-large  is-primary is-rounded is-fullwidth">
-              <select name="is_active">
-              @foreach($libro as $editorial)
-                <option  class="is-rounded" value="{{ $libro->editorial_id }}">{{ $libro->editorial->nombre }}</option>
-                <!-- <option value="0">Inactivo</option> -->
-                @endforeach
-              </select>
-            </div>
           </div>
         </div>
 

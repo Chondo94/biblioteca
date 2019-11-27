@@ -17,13 +17,13 @@
         {{ csrf_field() }}
         <div class="field">
           <div class="control">
-            <input type="text" name="nombre" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Nombre Editorial"><br>
+            <input type="text" name="nombre" class="input is-primary is-large has-text-centered is-rounded"  required pattern="[A-Z a-z]+" maxlength="50" placeholder="Nombre Editorial"><br>
           </div>
         </div>
 
         <div class="field">
           <div class="control">
-            <input type="text" name="telefono" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Telefono"><br>
+            <input type="text" name="telefono" class="input is-primary is-large has-text-centered is-rounded"  required pattern="[A-Z a-z 0-9]+" maxlength="50" placeholder="Telefono"><br>
           </div>
         </div>
 
