@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section class="hero is-primary">
+    <section class="hero is-dark">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
@@ -85,7 +85,7 @@
                             <div class="field-body">
                                 <div class="field is-grouped">
                                     <div class="control">
-                                        <button type="submit" class="button is-primary">Login</button>
+                                        <button type="submit" class="button is-dark">Login</button>
                                     </div>
 
                                     <div class="control">

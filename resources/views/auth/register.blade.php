@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="hero is-primary">
+    <section class="hero is-dark">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
@@ -11,11 +11,11 @@
         </div>
     </section>
 
-    <div class="columns is-marginless is-centered">
+    <div class="columns is-marginless is-centered ">
         <div class="column is-5">
-            <div class="card">
+            <div class="card is-dark">
                 <header class="card-header">
-                    <p class="card-header-title">Register</p>
+                    <p class="card-header-title ">Register</p>
                 </header>
 
                 <div class="card-content">
@@ -106,7 +106,7 @@
                             <div class="field-body">
                                 <div class="field is-grouped">
                                     <div class="control">
-                                        <button type="submit" class="button is-primary">Register</button>
+                                        <button type="submit" class="button is-dark">Register</button>
                                     </div>
                                 </div>
                             </div>
