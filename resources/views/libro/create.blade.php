@@ -47,13 +47,6 @@
         </div>
 
         <div class="field">
-          <!-- <label class="label">Fecha Publicacion</label> -->
-          <div class="control">
-            <input type="text" name="publicacion" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Fecha publicacion Y-M-D"><br>
-          </div>
-        </div>
-
-        <div class="field">
           <!-- <label class="label">Categoria</label> -->
           <div class="select is-primary is-rounded is-medium">
             <select name="categoria_id">
@@ -86,6 +79,13 @@
             <input type="text" name="editorial_id" class="input is-primary is-large has-text-centered is-rounded"  required placeholder="Editorial"><br>
           </div>
         </div> -->
+
+        <div class="field">
+          <label class="label">Fecha Publicacion</label>
+          <div class="control">
+            <input type="Date" name="publicacion" class="input is-primary is-large has-text-centered is-rounded" required placeholder=""><br>
+          </div>
+        </div>
 
         <div class="field">
         <div class="control">

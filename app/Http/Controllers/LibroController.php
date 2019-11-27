@@ -72,10 +72,13 @@ class LibroController extends Controller
     public function edit($id)
     {
       $libro = Libro::findOrFail($id);
-      $e = Editorial::findOrFail($id);
-      return view('libro.edit')
-      ->with('libro', $libro)
-      ->with('e', $e);
+      return view('libro.edit', compact('libro'));
+
+      // $libro = Libro::findOrFail($id);
+      // $e = Editorial::findOrFail($id);
+      // return view('libro.edit')
+      // ->with('libro', $libro)
+      // ->with('e', $e);
     }
 
     /**
