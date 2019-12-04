@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
-    <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}"> <!--este comando me sirve para llamar a Bulma-->
     <link rel="stylesheet" href="{{ asset('css/estilo.css') }}"> <!--este comando me sirve para llamar a Bulma-->
     <title></title>
@@ -37,7 +37,9 @@
 
         <div class="field">
           <div class="control">
-            <input type="text" name="descripcion" class="input is-primary is-large has-text-centered is-rounded"  required pattern="[A-Z a-z]+" maxlength="250" placeholder="Descripcion" value="{{ $libro->descripcion }}"><br>
+            <!-- La validacion que vemos en este input, es para poder ingresar asentos y tambien la letra ñ -->
+            <!-- \u00f1 y \u00d1 son el equivalente para "ñ" y "Ñ" -->
+            <input type="text" name="descripcion" class="input is-primary is-large has-text-centered is-rounded"  require="requiere" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$" placeholder="Descripcion" value="{{ $libro->descripcion }}"><br>
           </div>
         </div>
         <div class="field">

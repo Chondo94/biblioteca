@@ -1,6 +1,6 @@
 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="#">
+    <a class="navbar-item" href="libro">
       <img src="https://img2.freepng.es/20171207/f2e/library-logo-5a2954d7d97100.6829629715126581358907.jpg" width="112" height="44">
     </a>
 
